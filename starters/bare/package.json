@@ -1,0 +1,36 @@
+{
+  "name": "metalsmith-starter-bare",
+  "version": "0.1.0",
+  "description": "A Metalsmith bare starter",
+  "keywords": [
+    "metalsmith",
+    "starter"
+  ],
+  "author": "Metalsmith.js (https://metalsmith.io)",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "DEBUG=build,*metalsmith* NODE_ENV=development node build.js --watch",
+    "dev": "metalsmith --env DEBUG=build,*metalsmith* --env NODE_ENV=development -c build.js",
+    "watch": "metalsmith --env DEBUG=build,*metalsmith* --env NODE_ENV=development -c build.js -- --watch",
+    "build": "metalsmith --env NODE_ENV=production -c build.js",
+    "serve": "browser-sync start -s -w -f 'build' --cwd ./build --logLevel info"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.2"
+  },
+  "dependencies": {
+    "@metalsmith/default-values": "^4.0.0",
+    "@metalsmith/js-bundle": "^0.9.0",
+    "@metalsmith/layouts": "^2.7.0",
+    "@metalsmith/markdown": "^1.10.0",
+    "@metalsmith/permalinks": "^3.1.0",
+    "@metalsmith/refs": "^1.0.0",
+    "@metalsmith/remove": "^1.4.0",
+    "jstransformer-nunjucks": "^1.2.0",
+    "metalsmith": "^2.6.3"
+  },
+  "engines": {
+    "node": ">=14.18.0"
+  }
+}

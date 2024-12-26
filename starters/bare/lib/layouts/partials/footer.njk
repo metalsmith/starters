@@ -1,0 +1,11 @@
+<p></p>
+<p class="versioning">
+  <small>
+    <span>{{ refs.site.title }} v{{ build.pkgVersion }}</span>
+    <span>Metalsmith version: {{ build.msVersion }}</span>
+    <span>Node version: {{ build.nodeVersion }}</span>
+  </small>
+</p>
+<p class="copyright">
+  © {{ build.date.getFullYear() }} {{ refs.site.htmlMeta.author }} - Built with <a href="{{ refs.site.generatorurl }}">{{ refs.site.generator }}</a>
+</p>

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../src/assets/js/script.js"],
+  "sourcesContent": ["console.log(`Running in ${process.env.NODE_ENV} mode...`)\ndocument.querySelector('.mode').textContent = process.env.NODE_ENV"],
+  "mappings": ";;AAAA,UAAQ,IAAI,cAAc,aAAoB,UAAU;AACxD,WAAS,cAAc,OAAO,EAAE,cAAc;",
+  "names": []
+}

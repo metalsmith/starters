@@ -1,0 +1,28 @@
+---
+# this file's front matter is loaded as metadata in other files with @metalsmith/refs
+# then discarded from the build with @metalsmith/remove
+# any other file in the src/data folder can be used in the same way
+
+id: site-data
+title: Metalsmith bare starter
+lang: en-US
+generator: Metalsmith
+generatorurl: https://metalsmith.io
+nav:
+  - id: home
+    label: Home
+    uri: ''
+  - id: page1
+    label: Page 1
+    uri: page1/index.html
+  - id: page2
+    label: Page 2
+    uri: page2/index.html
+  - id: page3
+    label: Page 3
+    uri: page3/index.html
+htmlMeta:
+  author: John Doe
+  description: A bare metalsmith starter showing basics of repo setup, build configuration and usage of a few plugins
+---
+
