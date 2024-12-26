@@ -1,0 +1,25 @@
+{
+  "name": "@metalsmith/starters",
+  "version": "0.1.0",
+  "description": "Metalsmith starters and examples that can be used with the metalsmith init command",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write \"**/*.{yml,md,js,json}\"",
+    "format:check": "prettier --list-different \"**/*.{yml,md,js,json}\"",
+    "lint": "eslint --fix .",
+    "lint:check": "eslint --fix-dry-run .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "workspaces": [
+    "starters/bare"
+  ],
+  "devDependencies": {
+    "eslint": "^9.17.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-n": "^17.15.1",
+    "prettier": "^3.4.2"
+  }
+}
